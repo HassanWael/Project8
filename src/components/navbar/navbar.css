@@ -4,7 +4,11 @@
     padding: 0 5rem;
     margin-top: 1rem;
     position: fixed;
+<<<<<<< HEAD
     top: 0;
+=======
+    top:0;
+>>>>>>> 728379c17ca58f1f0d644c883db427bdb36c6741
     width: 100%;
 }
 
