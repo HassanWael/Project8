@@ -1,7 +1,7 @@
 import './App.css'
 import LogInForm from './components/Login/RegisterForm'
 import RegisterForm from './components/Login/LoginForm'
-import Nav from './components/navbar/navbar'
+import Nav from './components/NavBar/navbar'
 import Footer from './components/footer/footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Booking from './components/Booking/Booking'
