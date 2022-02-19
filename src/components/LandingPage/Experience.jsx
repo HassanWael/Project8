@@ -1,6 +1,6 @@
-function AboutUs() {
-  return (
-    <div className="container">
+function Experience() {
+    return (
+        <div className="container">
         <div className="container__text">
         <h2>
           {" "}
@@ -23,7 +23,7 @@ function AboutUs() {
           <img src="https://picsum.photos/200/300"/>
       </div>
     </div>
-  );
+      );
 }
 
-export default AboutUs;
+export default Experience;
