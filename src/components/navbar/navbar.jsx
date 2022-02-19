@@ -17,10 +17,13 @@ function Navbar() {
         </div>
         <div className="nav-items-side">
             <ul className='nav-items'>
-               <li className='nav-item'>Home</li>
-                <li className='nav-item'>Projects</li>
-                <li className='nav-item'>Profile</li>
-                <li className='nav-item'>Login/Register</li>
+               {/* <Link><li className='nav-item'>Home</li></Link> */}
+               <Link to={'/Book'}><li className='nav-item'>Book</li></Link>
+               {/* <Link><li className='nav-item'>Profile</li></Link> */}
+               <Link to={'/login'}><li className='nav-item'>Login/Register</li></Link>
+                
+                
+                
                 <button className='Resume-btn nav-item'>Resume</button>
             </ul>
         </div>
