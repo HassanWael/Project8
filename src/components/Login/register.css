@@ -1,0 +1,47 @@
+.errors{
+    color:red
+}
+
+.formContainer{
+ 
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#61f7d4;
+    width: 30%;
+    margin: 20vh auto;
+    box-shadow: -2px 2px 5px 5px rgba(97,247,212,0.22);
+-webkit-box-shadow: -2px 2px 5px 5px rgba(97,247,212,0.22);
+-moz-box-shadow: -2px 2px 5px 5px rgba(97,247,212,0.22);
+}
+.formContainer__row{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 75%;
+    margin: 10px 2px;
+    
+
+}
+.formContainer__row>input{
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.formContainer__row>button{
+    padding: 10px;
+
+}
+.haveAccount{
+    text-align: center;
+    color: whitesmoke;
+}
+.formContainer__row:nth-child(5){
+    margin: 10px;
+    width: 50%;
+    background-color: black;
+}
+
+
