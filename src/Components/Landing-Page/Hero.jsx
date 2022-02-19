@@ -1,4 +1,4 @@
-
+import './hero.css'
 let Hero = () => {
   return (
     <div className="hero">

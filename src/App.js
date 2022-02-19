@@ -5,6 +5,9 @@ import Nav from './components/NavBar/navbar'
 import Footer from './components/footer/footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Booking from './components/Booking/Booking'
+import Hero from './components/Landing-Page/Hero'
+import AboutUs from './components/LandingPage/AboutUs'
+import Experience from './components/LandingPage/Experience'
 function App() {
   return (
     <>
@@ -14,6 +17,7 @@ function App() {
         <Route path='/login' element= {<LogInForm />}></Route>  
         <Route path='/signup' element= {<RegisterForm/>}></Route>  
         <Route path='/Book' element= {<Booking/>}></Route>  
+        <Route path='/' element= {<><Hero/><AboutUs/> <Experience/> </>}></Route>  
         </Routes>
         <Footer />
       </BrowserRouter>

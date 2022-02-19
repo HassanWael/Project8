@@ -1,3 +1,4 @@
+import './landing.css'
 function Services() {
     return ( 
         <div className="container">

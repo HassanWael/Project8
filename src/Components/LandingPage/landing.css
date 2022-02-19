@@ -1,0 +1,21 @@
+.green{
+    color: #61f7d4;
+}
+.white{
+    color: #C3CDEc;
+}
+.containerAbout{
+    display: flex;
+    margin: 30vh;
+}
+.container__text{
+    width: 50%;
+}
+.container__text>p{
+    padding: 20px;
+
+}
+.containerEx{
+    display: flex;
+    margin: 30vh;
+}

@@ -1,12 +1,14 @@
+import './landing.css'
 function Experience() {
     return (
-        <div className="container">
-        <div className="container__text">
+        <div className="containerEx">
+        <div className="container__text white">
         <h2>
           {" "}
-          <span>01.</span> About me
+          <span className='green'>02.</span> Our Experince 
         </h2>
    
+        
       <p>
         Hello! we are Black crow we are a team that enjoys creating things that
         live on the internet . we are interested in web developement started
@@ -19,9 +21,7 @@ function Experience() {
         and React.
       </p>
       </div>
-      <div className="container__img">
-          <img src="https://picsum.photos/200/300"/>
-      </div>
+     
     </div>
       );
 }
