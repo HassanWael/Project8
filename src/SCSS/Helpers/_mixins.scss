@@ -1,0 +1,40 @@
+// Overlay
+
+/* ================================================================= */
+
+/*
+
+  Media Query Classes
+
+  Media Query
+  To Use This Mixin
+  @include (screen size) {
+    CSS Properties
+  }
+
+*/
+@mixin media-query($screen-size) {
+  @if $screen-size == x-small {
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  } @else if $screen-size == small {
+    @media (max-width: 767.98px) {
+      @content;
+    }
+  } @else if $screen-size == medium {
+    @media (max-width: 991.98px) {
+      @content;
+    }
+  } @else if $screen-size == large {
+    @media (max-width: 1199.98px) {
+      @content;
+    }
+  } @else if $screen-size == x-large {
+    @media (max-width: 1399.98px) {
+      @content;
+    }
+  }
+}
+
+/* ================================================================= */
