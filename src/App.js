@@ -1,12 +1,12 @@
 import './App.css';
-import LogInForm from './components/Login/RegisterForm';
-import RegisterForm from './components/Login/LoginForm';
-import Nav from './components/navbar/navbar'
+import RegisterForm from './components/Login/RegisterForm';
+import LogInForm from './components/Login/LoginForm';
+import Nav from './components/NavBar/navbar'
 function App() {
   return (
   <>
-  <Nav/>
-  <LogInForm/>
+  <Nav></Nav>
+ 
   <RegisterForm/>
   </>
   )
