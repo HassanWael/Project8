@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.navbar{
+    padding: 0 5rem;
+    margin-top: 1rem;
+    position: fixed;
+<<<<<<< HEAD
+    top: 0;
+=======
+    top:0;
+>>>>>>> 728379c17ca58f1f0d644c883db427bdb36c6741
+    width: 100%;
+}
+
+.nav-contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    height: 60px;
+}
+
+.nav-items{
+    display: flex;
+    list-style: none;  
+    align-items: center;    
+}
+
+.nav-item{
+    padding: 0 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color:#C3CDEC ;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.nav-item:hover{
+    color: #61f7d4;
+}
+
+.Resume-btn{
+    padding: 10px 15px;
+    border:1px solid #61f7d4 ;
+    background-color: #0a192f;
+    border-radius: 5px;
+    color: #61f7d4;
+    cursor: pointer;
+}
+.Resume-btn:hover{
+    background-color: #133040 ;
+}
+
+.burger div{
+    background-color: #C3CDEC;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+}
+.burger {
+    display: none;
+}
+
+@media screen and (max-width:720px) {
+    body{
+        overflow-x: hidden;
+    }
+   .nav-items{
+       position: absolute;
+       right: 0px;
+       height: 100vh;
+       background-color: #112240;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translateX(100%);
+       transition:transform 0.5s ease-in ;
+   }
+   .nav-item:first-child{
+    margin-top: 3rem;
+   }
+   .nav-item{
+       margin-top: 1rem;
+   }
+   .navbar{
+       padding: 0 1rem;
+       margin-top: 0;
+   }
+   .nav-contaner{
+    display: flex;
+   align-items: flex-start;
+   width: 50%;
+   justify-content: center;
+}
+.burger{
+    display: block;
+    position: absolute;
+    top:3rem;
+    right: 3rem;
+    z-index: 1;
+}
+.logo{
+    margin-top: 1rem;
+    width: 100px;
+    height: 100px;
+}
+}
+.nav-active{
+    transform: translateX(0%);
+
+}
