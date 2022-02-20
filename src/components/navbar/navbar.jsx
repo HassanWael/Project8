@@ -18,13 +18,15 @@ function Navbar() {
         </div>
         <div className="nav-items-side">
             <ul className='nav-items'>
-               {/* <Link><li className='nav-item'>Home</li></Link> */}
+               <Link to={'/'}><li className='nav-item'>Home</li></Link>
                <Link to={'/Book'}><li className='nav-item'>Book</li></Link>
                {/* <Link><li className='nav-item'>Profile</li></Link> */}
                <Link to={'/login'}><li className='nav-item'>Login</li></Link>
                <Link to={'/register'}><li className='nav-item'>Register</li></Link>
-               <button onClick={()=>{auth.signOut()}}>Signout</button>
-               <p>{auth.currentUser ? auth.currentUser.email:'login'}</p>
+               {/* <button onClick={()=>{auth.signOut()}}>Signout</button>
+               <p>{auth.currentUser ? auth.currentUser.email:'login'}</p> */}
+               <Link to={'/profile'}><li className='nav-item'>Profile</li></Link>
+               
                 
                 <button className='Resume-btn nav-item'>Resume</button>
             </ul>
