@@ -1,6 +1,6 @@
 import './App.css'
-import LogInForm from './components/Login/RegisterForm'
-import RegisterForm from './components/Login/LoginForm'
+import RegisterForm from './components/Login/RegisterForm'
+import  LogInForm from './components/Login/LoginForm'
 import Nav from './components/NavBar/navbar'
 import Footer from './components/footer/footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -15,7 +15,7 @@ function App() {
         <Nav />
         <Routes>
         <Route path='/login' element= {<LogInForm />}></Route>  
-        <Route path='/signup' element= {<RegisterForm/>}></Route>  
+        <Route path='/register' element= {<RegisterForm/>}></Route>  
         <Route path='/Book' element= {<Booking/>}></Route>  
         <Route path='/' element= {<><Hero/><AboutUs/> <Experience/> </>}></Route>  
         </Routes>

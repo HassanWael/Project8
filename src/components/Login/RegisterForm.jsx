@@ -18,6 +18,7 @@ function RegisterForm() {
         if (auth) {
           // navigate('/')
           alert("shater")
+          sessionStorage.setItem('email',email)
           db.collection('Users').doc(email).set({
             username:username,
             email:email,
