@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+.Booking{
+    display: grid;
+    grid-template-areas: 'info form ' ;
+    width: 75%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15vh;
+    padding: 2rem
+}
+.Book__info{
+    grid-area: info;
+padding: 2rem;
+background-color: whitesmoke;
+box-shadow: -4px 4px 14px 0px rgba(44,225,181,0.61);
+-webkit-box-shadow: -4px 4px 14px 0px rgba(44,225,181,0.61);
+-moz-box-shadow: -4px 4px 14px 0px rgba(44,225,181,0.61);
+    
+}
+.Booking__section{
+    padding: 2rem;
+    grid-area: form;
+    background-color: #61f7d4;
+    box-shadow: 0px 4px 14px 0px rgba(44,225,181,0.61);
+    -webkit-box-shadow: 0px 4px 14px 0px rgba(44,225,181,0.61);
+    -moz-box-shadow: 0px 4px 14px 0px rgba(44,225,181,0.61);
+   
+}
+.Booking__form{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+}
+.Booking__form>input,select{
+    padding: 0.5rem;
+    margin-bottom: 1rem
+}
+.info__titel{
+    font-weight: 400;
+    color: rgb(112, 111, 111);
+}
+.Book__info>p{
+    line-height: 1.4;
+    color: rgb(112, 111, 111);
+    margin-top: 10px;
+}
+.Book__info>ul{
+    margin-top: 10px;
+}
+.book__btn{
+    font-family: 'Roboto Condensed', sans-serif;
+   padding:  10px 30px;
+   background-color: #0a192f;
+   border-radius: 5px;
+   color: #61f7d4;
+}
+.book__btn:hover{
+    background-color: #0d2241;
+}
+            
+.btn__contaner{
+    margin: auto;
+
+}
+.secondary-p{
+    border-left: #61f7d4 solid 4px;
+    padding: 10px;
+}
+h1:first-child{
+color: #61f7d4;
+font-size: 30px;
+}
+@media screen and (max-width:1060px) {
+    .Booking{
+        grid-template-areas: 
+        'info'
+        'form'
+        ;
+        width: 100%;
+    }
+    .Booking__form{
+        width: 100vh;
+    }
+}
+@media screen and (max-width:700px) {
+    .Booking{
+    width: 10%;
+    }
+}

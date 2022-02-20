@@ -9,25 +9,19 @@ import Hero from './Components/LandingPage/Hero'
 import AboutUs from './Components/LandingPage/AboutUs'
 import Experience from './Components/LandingPage/Experience'
 import Services from './Components/LandingPage/Services'
-import { GetInTouch } from './Components/LandingPage/GetInTouch'
+import GetInTouch from './Components/LandingPage/GetInTouch'
+import Profile from './Components/profile/Profile'
 function App() {
   return (
     <>
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path='/login' element= {<LogInForm />}></Route>  
-          <Route path='/signup' element= {<RegisterForm/>}></Route>  
-          <Route path='/Book' element= {<Booking/>}></Route>  
-          <Route path='/' element= {
-            <>
-              <Hero/>
-              <AboutUs/>
-              <Experience/>
-              <Services />
-              <GetInTouch />
-            </>
-            }></Route>
+        <Route path='/login' element= {<LogInForm />}></Route>  
+        <Route path='/register' element= {<RegisterForm/>}></Route>  
+        <Route path='/Book' element= {<Booking/>}></Route>  
+        <Route path='/profile' element= {<Profile/>}></Route>  
+        <Route path='/' element= {<><Hero/><AboutUs/> <Experience/><Services /><GetInTouch /></>}></Route>  
         </Routes>
         <Footer />
       </BrowserRouter>

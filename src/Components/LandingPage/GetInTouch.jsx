@@ -1,7 +1,7 @@
 
-export let GetInTouch = () => {
+let GetInTouch = () => {
   return (
-    <section className="get-in-touch">
+    <section className="get-in-touch text-center">
       <div className="container">
         <h1>Get In Touch</h1>
         <p>
@@ -12,3 +12,5 @@ export let GetInTouch = () => {
     </section>
   )
 }
+
+export default GetInTouch;
