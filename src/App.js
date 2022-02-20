@@ -8,6 +8,7 @@ import Booking from './components/Booking/Booking'
 import Hero from './components/Landing-Page/Hero'
 import AboutUs from './components/LandingPage/AboutUs'
 import Experience from './components/LandingPage/Experience'
+import Profile from './components/profile/Profile'
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path='/login' element= {<LogInForm />}></Route>  
         <Route path='/signup' element= {<RegisterForm/>}></Route>  
         <Route path='/Book' element= {<Booking/>}></Route>  
+        <Route path='/profile' element= {<Profile/>}></Route>  
         <Route path='/' element= {<><Hero/><AboutUs/> <Experience/> </>}></Route>  
         </Routes>
         <Footer />

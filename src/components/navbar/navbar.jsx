@@ -17,9 +17,9 @@ function Navbar() {
         </div>
         <div className="nav-items-side">
             <ul className='nav-items'>
-               {/* <Link><li className='nav-item'>Home</li></Link> */}
+               <Link to={'/'}><li className='nav-item'>Home</li></Link>
                <Link to={'/Book'}><li className='nav-item'>Book</li></Link>
-               {/* <Link><li className='nav-item'>Profile</li></Link> */}
+               <Link to={'/profile'}><li className='nav-item'>Profile</li></Link>
                <Link to={'/login'}><li className='nav-item'>Login/Register</li></Link>
                 
                 
