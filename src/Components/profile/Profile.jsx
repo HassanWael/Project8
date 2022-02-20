@@ -14,7 +14,7 @@ function Profile() {
 
 
 
-        <table class="container">
+        <table class="container__table">
 	<thead>
 		<tr>
 			<th><h1>Sites</h1></th>
