@@ -33,8 +33,14 @@ function Navbar() {
               
                {/* <button onClick={()=>{auth.signOut()}}>Signout</button>
                <p>{auth.currentUser ? auth.currentUser.email:'login'}</p> */}
-               <Link to={'/profile'}><li className='nav-item'>Profile</li></Link>
-               <Link to={'/register'}><li className='nav-item'>Register</li></Link>
+               {
+                 (auth.currentUser)?
+                  <Link to={'/profile'}><li className='nav-item'>Profile</li></Link>
+                 :
+                 <Link to={'/register'}><li className='nav-item'>Register</li></Link>
+               }
+           
+               
                
                 
                 <button
@@ -42,6 +48,7 @@ function Navbar() {
                   onClick={()=>{
                     if(auth.currentUser)
                      { auth.signOut();
+                      window.location.reload();
                       setIsRegister(false)
                       
                     }

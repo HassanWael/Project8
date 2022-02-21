@@ -1,6 +1,7 @@
 import { useState } from "react";
 import UserForm from "./UserForm";
 import "./register.css";
+import { useNavigate } from "react-router-dom";
 import { auth , db} from '../Database/firebase'
 function RegisterForm() {
   const [email, setEmail] = useState("");
@@ -9,15 +10,15 @@ function RegisterForm() {
   const [formErrorEmail, setFormErrorEmail] = useState("");
   const [formErrorPassword, setFormErrorPassword] = useState("");
   const [usernameError, setUsernameError] = useState("");
-
-  const register = () => {
+  const [error,setError] = useState("");
+  const navigate = useNavigate();
   
+  const register = () => {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
         if (auth) {
-          // navigate('/')
-          alert("shater")
+          navigate('/')
           sessionStorage.setItem('email',email)
           db.collection('Users').doc(email).set({
             username:username,
@@ -26,7 +27,7 @@ function RegisterForm() {
           })
         }
       })
-      .catch((error) => console.log(error));
+      .catch((error) => setError(error.message));
 
    
   }
@@ -78,6 +79,9 @@ function RegisterForm() {
         <h1>Register</h1>
       </div>
       <div className="formContainer__row">
+        <small className="errors">{error}</small>
+      </div>
+      <div className="formContainer__row">
         <label>User Name: </label>
         <input
           name="username"
@@ -127,7 +131,7 @@ function RegisterForm() {
         </button>
       </div>
       <div className="formContainer__row">
-       <a className="haveAccount" href="">already have an account ? </a>
+       <a onClick={()=>{navigate('/login')}} className="haveAccount" href="">already have an account ? </a>
       </div>
     </UserForm>
   );
