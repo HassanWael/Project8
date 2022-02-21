@@ -76,11 +76,13 @@ function LoginForm() {
       </div>
       <div className="formContainer__row">
         <button
+        className="Resume-btn"
+        style={{fontSize:'20px'}}
           onClick={(e) => {
             loginSubmitHandler(e);
           }}
         >
-          Add
+          Login
         </button>
 
       </div>

@@ -1,17 +1,27 @@
 import './hero.css'
-
+import {useNavigate} from 'react-router-dom'
 let Hero = () => {
+  const navigate=useNavigate();
+  const hireUs=()=>{
+    navigate('/Book')
+  }
+  const ourProjects=()=>{
+    navigate('/Project')
+
+  }
   return (
     <div className="hero">
       <div className="container">
-        <span style={{color: '#64ffda'}}>Hi, My Name is</span>
-        <h2 className='hero-title'>Brittany Chiang.</h2>
-        <h2 className='hero-title'>I build things for the web.</h2>
+        <span style={{color: '#64ffda'}}>Hi, We Are</span>
+        <h2 className='hero-title'>iDeveloper Team.</h2>
+        <h2 className='hero-title'>We build things for the web.</h2>
         <p className='hero-desc'>
-          I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.<br />
-          Currently, I’m focused on building accessible, human-centered products at Upstatement.
+          We Are software engineers specializing in building (and occasionally designing)<br/> exceptional digital experiences.
+          Currently, We're focused on building accessible,
+          <br />human-centered products at Upstatement.
         </p>
-        <button className='btn-primary btn-lg'>Check out My Course</button>
+        <button className='Resume-btn hire' onClick={hireUs}>Hire US</button>
+        <button className='Resume-btn'onClick={ourProjects}>Our Projects </button>
       </div>
     </div>
   )

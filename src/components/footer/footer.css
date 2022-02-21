@@ -12,3 +12,7 @@
     text-align: center;
     color: #A0AAC9;
 }
+ul>a{
+    padding: 0 1rem;
+    font-size: x-large;
+}

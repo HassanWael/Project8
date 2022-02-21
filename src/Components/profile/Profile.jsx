@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { auth, db } from "../Database/firebase";
 import "./Profile.css";
+import { faker } from'@faker-js/faker';
 function Profile() {
   const [data, setData] = useState([]);
   const [person, setPerson] = useState([]);
@@ -35,16 +36,13 @@ function Profile() {
   return (
     <main className="profile">
       <section className="profile__info">
-        <img
-          src="https://www.sibberhuuske.nl/wp-content/uploads/2016/10/default-avatar.png"
-          alt=""
-        />
+	  <img src={faker.image.avatar()} alt="" />
         <h3>{auth.currentUser ? auth.currentUser.email : "no"}</h3>
         <h6>{data[0] ? data[0].phone : ""}</h6>
         <h6>{person.username}</h6>
       </section>
       <section className="profile_reservation">
-        <table className="container">
+        <table className="container__table">
           <thead>
             <tr>
               <th>

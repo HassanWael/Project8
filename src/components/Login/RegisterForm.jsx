@@ -118,6 +118,7 @@ function RegisterForm() {
       </div>
       <div className="formContainer__row">
         <button
+        className="Resume-btn"
           onClick={(e) => {
             registerSubmitHandler(e);
           }}

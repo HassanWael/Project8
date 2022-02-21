@@ -22,12 +22,13 @@ function Navbar() {
     <header className='navbar'>
       <nav className='nav-contaner'>
         <div className="logo-side">
-        <img className='logo' src={Logo} alt=""/>
+        <Link to={'/'}><img className='logo' src={Logo} alt=""/></Link>
         </div>
         <div className="nav-items-side">
             <ul className='nav-items'>
                <Link to={'/'}><li className='nav-item'>Home</li></Link>
                <Link to={'/Book'}><li className='nav-item'>Book</li></Link>
+               <Link to={'/project'}><li className='nav-item'>Projects</li></Link>
                {/* <Link><li className='nav-item'>Profile</li></Link> */}
               
                {/* <button onClick={()=>{auth.signOut()}}>Signout</button>
@@ -50,6 +51,9 @@ function Navbar() {
                 >
                   {isRegister?'Signout':'Login'}
                 </button>
+           
+               
+                
             </ul>
         </div>
                 <div className="burger" onClick={navSlide} >

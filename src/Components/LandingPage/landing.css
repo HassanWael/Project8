@@ -5,6 +5,11 @@
     color: #C3CDEc;
 }
 
+
+.experience .img-container img {
+    width: 90%;
+}
+
 .about, .experience, .services {
     padding: 80px;
 }
@@ -47,13 +52,25 @@
     
     .about .text-container,
     .experience .text-container {
-        max-width: 40%;
+        max-width: 50%;
     }
 
     .about .img-container,
     .about .img-container {
         width: 40%;
     }
+}
+
+.experience .img-container {
+    overflow: hidden;
+    height: 300px;
+}
+
+.experience .flex-container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .text-container p {
@@ -79,6 +96,8 @@
     padding: 15px;
     width: calc(95% / 3);
     margin: auto;
+    min-height: 70vh;
+    position: relative;
 }
 
 @media (max-width: 767px) {
@@ -121,6 +140,32 @@
     margin-bottom: 20px;
 }
 
+.get-in-touch button {
+    color: #61f7d4;
+}
+
 .text-center {
     text-align: center;
+}
+.service-details>p{
+font-size: 15px;
+}
+#book{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 1.5rem;
+
+    
+}
+.service-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+@media screen and (max-width:1000px) {
+    .service-details>p{
+        margin-bottom: 2rem;
+    }
 }
