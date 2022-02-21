@@ -41,14 +41,14 @@
               box-shadow: 0 2px 2px -2px #0E1119;
   }
   
-  .container {
-        /* text-align: left;
+/* .container {
+        text-align: left;
         overflow: hidden;
         width: 100%;
         
-    display: table; */
+    display: table;
 
-  }
+  } */
   
   .container td, .container th {
         padding-bottom: 2%;
