@@ -16,16 +16,6 @@ const add=()=>{
   if(auth.currentUser.email){
 
     db.collection('Orders')
-    .where('email','==',auth.currentUser.email)
-    .get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-       
-        arr.push(doc.data());
-      })
-        console.log(arr)
-      })
-
-    db.collection('Orders')
     .doc(random+' order '+randomChar)
     .set({
       name:name,

@@ -1,75 +1,84 @@
-import React from 'react'
-import './Profile.css'
+import React, { useEffect, useState } from "react";
+import { auth, db } from "../Database/firebase";
+import "./Profile.css";
 function Profile() {
+  const [data, setData] = useState([]);
+  const [person, setPerson] = useState([]);
+  const checkUser = () => {
+    if (auth.currentUser) {
+      return true;
+    } else return false;
+  };
+  useEffect(() => {
+    let arr = [];
+    if (checkUser()) {
+      db.collection("Orders")
+        .where("email", "==", auth.currentUser.email)
+        .get()
+        .then((querySnapshot) => {
+          querySnapshot.forEach((doc) => {
+            arr.push(doc.data());
+          });
+          console.log(arr);
+          setData(arr);
+        });
+      db.collection("Users")
+        .where("email", "==", auth.currentUser.email)
+        .get()
+        .then((querySnapshot) => {
+          querySnapshot.forEach((doc) => {
+            setPerson(doc.data());
+          });
+        });
+    }
+  }, []);
   return (
-    <main className='profile'>
-        <section className='profile__info'>
-            <img src="https://www.sibberhuuske.nl/wp-content/uploads/2016/10/default-avatar.png" alt="" />
-            <h3>Name</h3>
-            <h6>phone number</h6>
-            <h6>email</h6>
-            
-        </section>
-        <section className='profile_reservation'>
-
-
-
-        <table class="container">
-	<thead>
-		<tr>
-			<th><h1>Sites</h1></th>
-			<th><h1>Views</h1></th>
-			<th><h1>Clicks</h1></th>
-			<th><h1>Average</h1></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Google</td>
-			<td>9518</td>
-			<td>6369</td>
-			<td>01:32:50</td>
-		</tr>
-		<tr>
-			<td>Twitter</td>
-			<td>7326</td>
-			<td>10437</td>
-			<td>00:51:22</td>
-		</tr>
-		<tr>
-			<td>Amazon</td>
-			<td>4162</td>
-			<td>5327</td>
-			<td>00:24:34</td>
-		</tr>
-    <tr>
-			<td>LinkedIn</td>
-			<td>3654</td>
-			<td>2961</td>
-			<td>00:12:10</td>
-		</tr>
-    <tr>
-			<td>CodePen</td>
-			<td>2002</td>
-			<td>4135</td>
-			<td>00:46:19</td>
-		</tr>
-    <tr>
-			<td>GitHub</td>
-			<td>4623</td>
-			<td>3486</td>
-			<td>00:31:52</td>
-		</tr>
-	</tbody>
-</table>
-
-
-
-
-        </section>
-
+    <main className="profile">
+      <section className="profile__info">
+        <img
+          src="https://www.sibberhuuske.nl/wp-content/uploads/2016/10/default-avatar.png"
+          alt=""
+        />
+        <h3>{auth.currentUser ? auth.currentUser.email : "no"}</h3>
+        <h6>{data[0] ? data[0].phone : ""}</h6>
+        <h6>{person.username}</h6>
+      </section>
+      <section className="profile_reservation">
+        <table className="container">
+          <thead>
+            <tr>
+              <th>
+                <h1>Service</h1>
+              </th>
+              <th>
+                <h1>Name</h1>
+              </th>
+              <th>
+                <h1>Date</h1>
+              </th>
+              <th>
+                <h1>Delevery Date</h1>
+              </th>
+              <th>Phone Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data?.map((element, index) => {
+              return (
+                <tr key={index}>
+                  <td>{element.service}</td>
+                  <td>{element.name}</td>
+                  <td>{element.date}</td>
+                  <td>{element.deleveryDate}</td>
+                  <td>{element.phone}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </section>
     </main>
-  )
+  );
 }
 
-export default Profile
+export default Profile;

@@ -3,12 +3,13 @@ import { useState } from "react";
 import UserForm from "./UserForm";
 import { auth , db} from '../Database/firebase'
 import './register.css'
+import { useNavigate } from "react-router-dom";
 function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [formErrorEmail, setFormErrorEmail] = useState("");
   const [formErrorPassword, setFormErrorPassword] = useState("");
-
+  const navigate = useNavigate();
 
   const login = () => {
     auth
@@ -16,8 +17,7 @@ function LoginForm() {
       .then((auth) => {
         if (auth) {
        sessionStorage.setItem('email',email)
-     alert('haha')
-          
+       navigate('/');
         }
       })
       .catch((error) => console.log(error))
