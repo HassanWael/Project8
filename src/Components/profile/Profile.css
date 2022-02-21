@@ -41,13 +41,11 @@
               box-shadow: 0 2px 2px -2px #0E1119;
   }
   
-  .container__table {
+.container__table {
         text-align: left;
         overflow: hidden;
         width: 100%;
-        
     display: table;
-
   }
   
   .container__table td, .container__table th {

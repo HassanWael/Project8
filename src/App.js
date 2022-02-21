@@ -11,6 +11,7 @@ import Experience from './Components/LandingPage/Experience'
 import Services from './Components/LandingPage/Services'
 import GetInTouch from './Components/LandingPage/GetInTouch'
 import Profile from './Components/profile/Profile'
+import Project from './Components/Project/Project'
 function App() {
   return (
     <>
@@ -20,7 +21,9 @@ function App() {
         <Route path='/login' element= {<LogInForm />}></Route>  
         <Route path='/register' element= {<RegisterForm/>}></Route>  
         <Route path='/Book' element= {<Booking/>}></Route>  
-        <Route path='/profile' element= {<Profile/>}></Route>  
+        <Route path='/profile' element= {<Profile/>}></Route> 
+        <Route path='/project' element= {<Project/>}></Route> 
+
         <Route path='/' element= {<><Hero/><AboutUs/> <Experience/><Services /><GetInTouch /></>}></Route>  
         </Routes>
         <Footer />

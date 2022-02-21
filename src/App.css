@@ -1,11 +1,47 @@
-*{
-    font-family: Calibre ;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+/* // Calibre Font */
+@import url('http://fonts.cdnfonts.com/css/calibre');
+
+/* // Global Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-      overflow-x: hidden;
-    background-color: #0a192f;
-  }
+
+body {
+  font-family: 'Calibre', sans-serif;
+  background-color: #0A192F;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+a.nav-link, .logo-link {
+  text-decoration: none;
+}
+
+/* // Buttons Classes */
+.btn-primary {
+  background: #64ffda;
+  color: #FFF;
+  border: 1px solid #64ffda;
+  transition: .5s;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: rgba(100, 255, 218, 0.6);
+}
+
+/* // .btn-lg {
+//   font-size: 1.2rem;
+// } */

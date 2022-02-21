@@ -7,7 +7,7 @@ function Experience() {
           <div className="flex-container">
             <div className="text-container">
               <p>
-                Hello! we are Black crow we are a team that enjoys creating things
+                Hello! we are iDeveloper we are a team that enjoys creating things
                 that live on the internet . we are interested in web developement
                 started back in 2020. Fast-forward to today, and I’ve had the
                 privilege of working at an advertising agency, a start-up, a huge
@@ -19,7 +19,7 @@ function Experience() {
               </p>
             </div>
             <div className="img-container">
-              <img src="https://picsum.photos/400/300" />
+              <img src="https://www.neuralt.com/wp-content/uploads/2020/09/Programmer-1024x683.jpg" />
             </div>
           </div>
         </div>

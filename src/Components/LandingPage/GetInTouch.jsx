@@ -7,7 +7,9 @@ let GetInTouch = () => {
         <p>
           Although I’m not currently looking for any new opportunities, my inbox is always  open. Whether you have a question or just wa
         </p>
-        <button className="primary-btn btn-lg">Say Hello</button>
+        <button className="btn-primary btn-lg" style={{background:"#5ff3d0ad"}}>
+        <a href="/Book" style={{textDecoration:"none",color:"white"}}>Book Now </a>
+        </button>
       </div>
     </section>
   )

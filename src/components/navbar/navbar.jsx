@@ -20,6 +20,7 @@ function Navbar() {
             <ul className='nav-items'>
                <Link to={'/'}><li className='nav-item'>Home</li></Link>
                <Link to={'/Book'}><li className='nav-item'>Book</li></Link>
+               <Link to={'/project'}><li className='nav-item'>Projects</li></Link>
                {/* <Link><li className='nav-item'>Profile</li></Link> */}
                <Link to={'/login'}><li className='nav-item'>Login</li></Link>
                <Link to={'/register'}><li className='nav-item'>Register</li></Link>
@@ -28,7 +29,6 @@ function Navbar() {
                <Link to={'/profile'}><li className='nav-item'>Profile</li></Link>
                
                 
-                <button className='Resume-btn nav-item'>Resume</button>
             </ul>
         </div>
                 <div className="burger" onClick={navSlide} >

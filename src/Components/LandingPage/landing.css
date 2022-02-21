@@ -5,6 +5,11 @@
     color: #C3CDEc;
 }
 
+
+.experience .img-container img {
+    width: 90%;
+}
+
 .about, .experience, .services {
     padding: 80px;
 }
@@ -47,13 +52,25 @@
     
     .about .text-container,
     .experience .text-container {
-        max-width: 40%;
+        max-width: 50%;
     }
 
     .about .img-container,
     .about .img-container {
         width: 40%;
     }
+}
+
+.experience .img-container {
+    overflow: hidden;
+    height: 300px;
+}
+
+.experience .flex-container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .text-container p {
@@ -119,6 +136,10 @@
     width: 600px;
     margin: auto;
     margin-bottom: 20px;
+}
+
+.get-in-touch button {
+    color: #61f7d4;
 }
 
 .text-center {
