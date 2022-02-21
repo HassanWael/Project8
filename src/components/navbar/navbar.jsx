@@ -14,7 +14,7 @@ function Navbar() {
     <header className='navbar'>
       <nav className='nav-contaner'>
         <div className="logo-side">
-          <h2 style={{color: "#64ffda"}}>iDeveloper</h2>
+        <Link to={'/'}><img className='logo' src={Logo} alt=""/></Link>
         </div>
         <div className="nav-items-side">
             <ul className='nav-items'>

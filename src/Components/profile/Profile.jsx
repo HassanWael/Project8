@@ -1,10 +1,11 @@
 import React from 'react'
 import './Profile.css'
+import { faker } from'@faker-js/faker';
 function Profile() {
   return (
     <main className='profile'>
         <section className='profile__info'>
-            <img src="https://www.sibberhuuske.nl/wp-content/uploads/2016/10/default-avatar.png" alt="" />
+            <img src={faker.image.avatar()} alt="" />
             <h3>Name</h3>
             <h6>phone number</h6>
             <h6>email</h6>
@@ -14,7 +15,7 @@ function Profile() {
 
 
 
-        <table class="container">
+        <table class="container__table">
 	<thead>
 		<tr>
 			<th><h1>Sites</h1></th>
