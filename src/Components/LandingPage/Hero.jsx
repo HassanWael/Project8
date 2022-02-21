@@ -1,6 +1,14 @@
 import './hero.css'
-
+import {useNavigate} from 'react-router-dom'
 let Hero = () => {
+  const navigate=useNavigate();
+  const hireUs=()=>{
+    navigate('/Book')
+  }
+  const ourProjects=()=>{
+    navigate('/Project')
+
+  }
   return (
     <div className="hero">
       <div className="container">
@@ -12,8 +20,8 @@ let Hero = () => {
           Currently, We're focused on building accessible,
           <br />human-centered products at Upstatement.
         </p>
-        <button className='btn-primary btn-lg'>Hire US</button>
-        <button className='secondary-btn btn-lg'>Learn More</button>
+        <button className='Resume-btn hire' onClick={hireUs}>Hire US</button>
+        <button className='Resume-btn'onClick={ourProjects}>Our Projects </button>
       </div>
     </div>
   )

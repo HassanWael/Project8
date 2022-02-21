@@ -69,7 +69,7 @@ useEffect(()=>{},[])
         </section>
         <section className="Booking__section">
           <div className="Booking__form">
-            <label>Company Name</label>
+            <label>Company Name / Customer Name</label>
             <input type="text" onChange={(e)=>{setName(e.target.value)}} />
             <label>Phone Number</label>
             <input type="number" onChange={(e)=>{setPhone(e.target.value)}} />
@@ -77,7 +77,7 @@ useEffect(()=>{},[])
             <input type="date" onChange={(e)=>{setDate(e.target.value)}} />
             <label>pick a service</label>
             <select name="" id="" onChange={(e)=>{setService(e.target.value)}}>
-              <option disabled>select the service you need</option>
+              <option disabled >select the service you need</option>
               <option value="">Consulting</option>
               <option value="">Web Development</option>
               <option value="">Mobile Development</option>

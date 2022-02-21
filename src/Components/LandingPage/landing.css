@@ -96,6 +96,8 @@
     padding: 15px;
     width: calc(95% / 3);
     margin: auto;
+    min-height: 70vh;
+    position: relative;
 }
 
 @media (max-width: 767px) {
@@ -144,4 +146,26 @@
 
 .text-center {
     text-align: center;
+}
+.service-details>p{
+font-size: 15px;
+}
+#book{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 1.5rem;
+
+    
+}
+.service-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+@media screen and (max-width:1000px) {
+    .service-details>p{
+        margin-bottom: 2rem;
+    }
 }
