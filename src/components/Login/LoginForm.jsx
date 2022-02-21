@@ -15,7 +15,7 @@ function LoginForm() {
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
         if (auth) {
-       
+       sessionStorage.setItem('email',email)
      alert('haha')
           
         }
