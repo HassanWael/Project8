@@ -14,7 +14,7 @@ function Navbar() {
     <header className='navbar'>
       <nav className='nav-contaner'>
         <div className="logo-side">
-        <img className='logo' src={Logo} alt=""/>
+          <h2 style={{color: "#64ffda"}}>iDeveloper</h2>
         </div>
         <div className="nav-items-side">
             <ul className='nav-items'>
@@ -29,7 +29,6 @@ function Navbar() {
                <Link to={'/profile'}><li className='nav-item'>Profile</li></Link>
                
                 
-                <button className='Resume-btn nav-item'>Resume</button>
             </ul>
         </div>
                 <div className="burger" onClick={navSlide} >

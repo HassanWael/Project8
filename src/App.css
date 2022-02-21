@@ -29,16 +29,16 @@ a.nav-link, .logo-link {
 }
 
 /* // Buttons Classes */
-.primary-btn {
-  background: transparent;
-  color: #64ffda;
+.btn-primary {
+  background: #64ffda;
+  color: #FFF;
   border: 1px solid #64ffda;
   transition: .5s;
   padding: 10px 15px;
   cursor: pointer;
 }
 
-.primary-btn:hover {
+.btn-primary:hover {
   background-color: rgba(100, 255, 218, 0.6);
 }
 
