@@ -30,7 +30,7 @@ a.nav-link, .logo-link {
 
 /* // Buttons Classes */
 .btn-primary {
-  background: #64ffda;
+  background: rgba(100, 255, 218, 0.6);
   color: #FFF;
   border: 1px solid #64ffda;
   transition: .5s;
