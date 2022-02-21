@@ -1,0 +1,63 @@
+.hero{
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 0 30px;
+    }
+}
+
+.hero {
+    margin-top: 9rem;
+    margin-bottom: 6rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: #CCC;
+    margin-bottom: 10px;
+}
+
+.hero-title:nth-child(2) {
+    color: #CCC;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.hero-title:nth-child(3) {
+    color: #FFF
+}
+
+@media (max-width: 767px) {
+    .hero-title:nth-child(3) {
+        font-size: 2rem;
+    }
+}
+
+.hero-desc {
+    color: #CCC;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .hero-desc {
+        font-size: 1.5rem;
+        width: 370px;
+    }
+}
+
+.hero button {
+    background: transparent;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+    transition: .5s;
+    padding: 10px 15px;
+    margin-top: 0.75rem;
+    font-size: 1.29rem;
+}
+

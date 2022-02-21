@@ -1,0 +1,46 @@
+// Calibre Font
+@import url('http://fonts.cdnfonts.com/css/calibre');
+
+// Global Rules
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Calibre', sans-serif;
+  background-color: $dark-color;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+a.nav-link, .logo-link {
+  text-decoration: none;
+}
+
+// Buttons Classes
+.primary-btn {
+  background: transparent;
+  color: $green-color;
+  border: 1px solid $green-color;
+  transition: .5s;
+  padding: 10px 15px;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+// .btn-lg {
+//   font-size: 1.2rem;
+// }

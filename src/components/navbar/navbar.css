@@ -18,7 +18,7 @@
 }
 
 .logo{
-    width: 80px;
+    width: 150px;
     height: 60px;
 }
 
@@ -35,6 +35,7 @@
     font-weight: 400;
     color:#C3CDEC ;
     font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
 }
 .nav-item:hover{
     color: #61f7d4;
